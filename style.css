@@ -1,0 +1,72 @@
+body{
+    display:grid;
+    height:100vh;
+    grid-template:1fr 6fr/1fr 4fr;
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: blue;
+    grid-column:1/-1;
+    grid-row:1;
+}
+
+.main-content{
+    background-color: aqua;
+}
+
+.sidebar{
+    background-color: blueviolet;
+    color:white;
+    display:grid;
+    grid-template-rows: 1fr 9fr;
+    font-size:1.5rem;
+    justify-content: center;
+}
+
+.icon{
+    font-size:2rem;
+}
+
+.sidebar div{
+    background-color: green;
+    padding: 40px;
+}
+
+.sidebar li{
+    padding:10px 0px;
+   
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+.header{
+    display:grid;
+    grid-template:1fr 2fr/3fr 2fr;
+}
+
+.searchbar{
+    height:50px;
+    background-color:red;
+}
+
+button{
+    height:50px;
+    width:80px;
+    background-color:purple;
+}
+
+.user-options{
+    display:flex;
+}
