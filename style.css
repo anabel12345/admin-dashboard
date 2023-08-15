@@ -80,3 +80,39 @@ body{
 .large-profile-text{
     font-size:3rem;
 }
+
+.profile-btns{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    align-items: center;
+    padding:15px;
+}
+
+.profile-btns > button{
+    background-color: blueviolet;
+    border-radius:30px;
+    height:3em;
+}
+
+
+.main{
+  display:grid;
+
+
+}
+
+.projects{
+    
+    display:grid;
+    gap:4px;
+    background-color: skyblue;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    align-items: center;
+}
+
+.project{
+    background-color: deeppink;
+   height:250px;
+   
+}
