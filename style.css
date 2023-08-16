@@ -1,3 +1,18 @@
+:root{
+    /* colors in order from light to dark */
+    --1:#f0f9ff;
+    --2:#e0f2fe;
+    --3:#bae6fd;
+    --4:#7dd3fc;
+    --5:#38bdf8;
+    --6:#0ea5e9;
+    --7:#0284c7;
+    --8:#0369a1;
+    --9:#075985;
+    --10:#082f49;
+}
+
+
 body{
     display:grid;
     height:100vh;
@@ -6,7 +21,7 @@ body{
 }
 
 .header{
-    background-color: blue;
+    background-color: var(--3);
     grid-column:1/-1;
     grid-row:1;
     display:grid;
@@ -15,19 +30,19 @@ body{
 
 
 .main-content{
-    background-color: aqua;
+    background-color: var(--2);
 }
 
  .sidebar{
-    background-color: blueviolet;
-    color:white;
+    color:#211d32;
     font-size:1.5rem;
     justify-content: center;
+    background-color: var(--4);
 }
  
 
 .searchbar{
-    background-color: rgb(58, 95, 154);
+   
 }
 
 .top-right-icons{
@@ -37,15 +52,13 @@ body{
 
 
 .alert{
-    background-color: red;
-    
+ 
 }
 
 .pfp{
-    background-color: brown;
 }
 .user-name{
-    background-color: rgb(255, 221, 0);
+   
 }
 
 
@@ -55,7 +68,7 @@ body{
 
 
 .profile-container{
-    background-color: beige;
+   
     display:grid;
     grid-template:2fr 3fr/1fr 4fr;
     
@@ -78,7 +91,7 @@ body{
 }
 
 .large-profile-text{
-    font-size:3rem;
+    font-size:2rem;
 }
 
 .profile-btns{
@@ -90,7 +103,7 @@ body{
 }
 
 .profile-btns > button{
-    background-color: blueviolet;
+  
     border-radius:30px;
     height:3em;
 }
@@ -106,13 +119,13 @@ body{
     
     display:grid;
     gap:4px;
-    background-color: skyblue;
+
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     align-items: center;
 }
 
 .project{
-    background-color: deeppink;
+   
    height:250px;
    
 }
@@ -124,5 +137,4 @@ body{
 
 .announcements{
     
-    background-color: #32b758;
 }
