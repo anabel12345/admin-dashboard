@@ -30,17 +30,13 @@ body{
 }
 
 .header{
-    background-color: var(--3);
+    background-color: var(--4);
     grid-column:1/-1;
     grid-row:1;
     display:grid;
     grid-template:2fr 3fr/3fr 1fr;
 }
 
-
-.main-content{
-    background-color: var(--2);
-}
 
 
  
@@ -104,12 +100,13 @@ body{
 
 .main-content{
     display:grid;
-    grid-template-columns: 4fr 1fr;
-
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--3);
+    
 }
 
 .projects{
-    padding:14px;
+    padding:29px;
     display:grid;
     gap:14px;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -120,7 +117,7 @@ body{
   
     height:100%;
     width:100%;
-    background-color: var(--3);
+    background-color: var(--4);
     border-radius:16px;
     padding:20px;
    
@@ -145,8 +142,11 @@ body{
 }
 
 
-
-
+.projects::first-line{
+    font-size:1.6rem;
+    font-weight:900;
+    color:white;
+}
 
 
 
@@ -155,7 +155,44 @@ body{
 .updates{
     display:grid;
     grid-template-rows: repeat(2, 1fr);
+    padding:16px;
 }
+
+.announcements-container::first-line{
+    font-size:1.6rem;
+    font-weight:900;
+  
+}
+
+
+.announcement{
+    background-color: var(--4);
+    border-radius:16px;
+    padding:20px;
+    margin-top:16px;
+}
+
+.announcement>.announcement-header{
+    font-size:1.1rem;
+    font-weight: 800;
+    margin-bottom:6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -225,7 +262,7 @@ button:hover{
 .sidebar{
     color:#211d32;
     font-size:1.5rem;
-    background-color: var(--4);
+    background-color: var(--5);
     display:grid;
     grid-template-rows: fit-content 1fr;
     padding:56px;
